@@ -19,8 +19,8 @@ public class Training_task1 {
   }
     public static void main(String[] args) {
         
-       employee hmm =new employee("hmm","Asyut",23,Gender.female);
-       department is =new department();
+       Employee hmm =new Employee("hmm","Asyut",23,Gender.female);
+       Department is =new Department();
        is.addEmployee(hmm);
        is.print_basic_data();
        is.countEmployee();

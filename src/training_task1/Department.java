@@ -12,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author Microsoft
  */
-public class department {
+public class Department {
        int dno;
     String dname;
-    ArrayList<employee>emplist=new ArrayList<>(); 
+    ArrayList<Employee>emplist=new ArrayList<>(); 
 
     public int getDno() {
         return dno;
@@ -33,15 +33,15 @@ public class department {
         this.dname = dname;
     }
 
-    public ArrayList<employee> getEmplist() {
+    public ArrayList<Employee> getEmplist() {
         return emplist;
     }
 
-    public void setEmplist(ArrayList<employee> emplist) {
+    public void setEmplist(ArrayList<Employee> emplist) {
         this.emplist = emplist;
     }
 
-        public void addEmployee(employee e){
+        public void addEmployee(Employee e){
         emplist.add(e);  
     }
         
@@ -53,6 +53,14 @@ public class department {
         public void countEmployee(){
            System.out.println( emplist.size());
     }
+
+    @Override
+    public String toString() {
+        return "department{" + "dno=" + dno + ", dname=" + dname + ", emplist=" + emplist + '}';
+    }
+        
+        
+        
     public void print_basic_data(){
         for(int i=0;i<emplist.size();i++){
             System.out.println(emplist.get(i).getSsn()+""+emplist.get(i).getName()+ " "+emplist.get(i).getAddress()+" "+emplist.get(i).getSex());
@@ -60,13 +68,13 @@ public class department {
     }
     
     
-    public department(int dno, String dname, ArrayList<employee> emplist) {
+    public Department(int dno, String dname, ArrayList<Employee> emplist) {
         this.dno = dno;
         this.dname = dname;
         this.emplist = emplist;
     }
 
-    public department() {
+    public Department() {
     }
     
     

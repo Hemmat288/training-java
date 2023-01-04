@@ -10,12 +10,12 @@ package training_task1;
  * @author Microsoft
  */
  enum Gender{male,female};
-public class employee {
+public class Employee {
         String name;
         String address;
         int ssn;
         Gender sex;
-
+Department d= new Department();
     public String getName() {
         return name;
     }
@@ -48,10 +48,10 @@ public class employee {
         this.sex = sex;
     }
 
-    public employee() {
+    public Employee() {
     }
 
-    public employee(String name, String address, int ssn, Gender sex) {
+    public Employee(String name, String address, int ssn, Gender sex) {
         this.name = name;
         this.address = address;
         this.ssn = ssn;
